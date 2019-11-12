@@ -1,0 +1,13 @@
+<h1>Edit a task</h1>
+
+<%= render "form" %>
+
+
+<% if %>
+  <% @task.completed == false %>
+    <input type="checkbox" id="task" name="task">
+    <%= "This task is not completed yet" %>
+<% else %>
+  <input type="checkbox" id="task" name="task" checked>
+  <%= "This task is completed" %>
+<% end %>
